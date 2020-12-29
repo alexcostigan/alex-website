@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/alex-website/static/css/main.929ce9ef.chunk.css",
-    "main.js": "/alex-website/static/js/main.0dfdff07.chunk.js",
-    "main.js.map": "/alex-website/static/js/main.0dfdff07.chunk.js.map",
+    "main.js": "/alex-website/static/js/main.82ecbeb0.chunk.js",
+    "main.js.map": "/alex-website/static/js/main.82ecbeb0.chunk.js.map",
     "runtime-main.js": "/alex-website/static/js/runtime-main.24365e5f.js",
     "runtime-main.js.map": "/alex-website/static/js/runtime-main.24365e5f.js.map",
     "static/css/2.cd1c2086.chunk.css": "/alex-website/static/css/2.cd1c2086.chunk.css",
     "static/js/2.9a6df577.chunk.js": "/alex-website/static/js/2.9a6df577.chunk.js",
     "static/js/2.9a6df577.chunk.js.map": "/alex-website/static/js/2.9a6df577.chunk.js.map",
     "index.html": "/alex-website/index.html",
-    "precache-manifest.369999fa8c111d9beadfe17b8a90fdf0.js": "/alex-website/precache-manifest.369999fa8c111d9beadfe17b8a90fdf0.js",
+    "precache-manifest.3c44d66460917f86937276932f5328f6.js": "/alex-website/precache-manifest.3c44d66460917f86937276932f5328f6.js",
     "service-worker.js": "/alex-website/service-worker.js",
     "static/css/2.cd1c2086.chunk.css.map": "/alex-website/static/css/2.cd1c2086.chunk.css.map",
     "static/css/main.929ce9ef.chunk.css.map": "/alex-website/static/css/main.929ce9ef.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.cd1c2086.chunk.css",
     "static/js/2.9a6df577.chunk.js",
     "static/css/main.929ce9ef.chunk.css",
-    "static/js/main.0dfdff07.chunk.js"
+    "static/js/main.82ecbeb0.chunk.js"
   ]
 }
