@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-
+import { FaReact, FaHtml5, FaCss3 } from "react-icons/fa";
+import { SiJavascript, SiTypescript, SiRedux } from "react-icons/si";
 const InfoContainer = styled.div`
     color: #fff;
     background: ${({lightBg}) => (lightBg ? '#f9f9f9' : 'rgba(58, 38, 122, 0.7)')};
@@ -52,23 +53,13 @@ const TextWrapper = styled.div`
     padding-bottom: 60px;
 `
 
-const TopLine = styled.p`
-    color: #3a267a;
-    font-size: 16px;
-    line-height: 16px;
-    font-weight: 700;
-    letter-spacing: 1.4px;
-    text-transform: uppercase;
-    margin-bottom: 16px;
-
-`
-
 const Heading = styled.h1`
     margin-bottom: 24px;
-    font-size: 48px;
+    font-size: 60px;
     line-height: 1.1;
     font-weight: 600;
-    color: ${({ lightText }) => (lightText ? '#f7f8fa' : '#010606')};
+    font-family: 'Jura';
+    color: ${({ lightText }) => (lightText ? '#3a267a' : '#010606')};
 
     @media screen and (max-width) {
         font-size: 32px;
@@ -79,15 +70,12 @@ const Heading = styled.h1`
 const Subtitle = styled.p`
     max-width: 440px;
     margin-bottom: 35px;
-    font-size: 18px;
+    font-size: 25px;
+    font-family: 'Patrick Hand';
     line-height: 24px;
-    color: ${({darkText}) => (darkText ? '#010606' : '#fff')};
+    color: ${({darkText}) => (darkText ? '#010606' : '#3a267a')};
 `
 
-const BtnWrap = styled.div`
-    display: flex;
-    justify-content: flex-start;
-`
 
 const ImgWrap = styled.div`
     max-width: 555px;
@@ -104,9 +92,8 @@ export const homeObjOne = {
   lightBg: false,
   lightText: true,
   lightTextDesc: true,
-  topLine: 'About Me',
-  headline: 'Write something about me',
-  description: 'Write a description',
+  headline: 'ABOUT ME',
+  description: 'I am a motivated individual who always wants to learn something new, which I believe is very important for this industry. I’ve had a passion for tech since a young age and only in the last year have I made it in to a career rather than just a hobby. I love this industry and I love all things technology related, I am constantly trying to better myself by keeping up to date with new technologies, whether thats watching videos, reading articles or attending events.',
   imgStart: false,
   img: require('../../assets/illustrations/svg1.svg'),
   alt: 'img',
@@ -115,7 +102,24 @@ export const homeObjOne = {
   darkText: false
 }
 
-export function ReviewsSection({lightBg, id, img, imgStart, topLine, lightText, headline, darkText, description, alt}) {
+const Skills = styled.div`
+  color: #3a267a;
+  font-size: 80px;
+  transition: all 200ms ease-in-out;
+  display: flex;
+  justify-content: space-around;
+
+  @media screen and (max-width: 768px) {
+        font-size: 40px;
+    }
+
+    @media screen and (max-width: 480px) {
+        font-size: 30px;
+    }
+`;
+
+
+export function AboutMe({lightBg, id, img, imgStart, topLine, lightText, headline, darkText, description, alt}) {
 
   return (
     <InfoContainer lightBg={lightBg} id={id}>
@@ -123,7 +127,6 @@ export function ReviewsSection({lightBg, id, img, imgStart, topLine, lightText, 
         <InfoRow imgStart={imgStart}>
           <Column1>
             <TextWrapper>
-              <TopLine>{topLine}</TopLine>
                 <Heading lightText={lightText}>{headline}</Heading>
                 <Subtitle darkText={darkText}>{description}</Subtitle>
             </TextWrapper>
@@ -133,6 +136,12 @@ export function ReviewsSection({lightBg, id, img, imgStart, topLine, lightText, 
                 <Img src={img} alt={alt} />
               </ImgWrap>
             </Column2>
+          <Skills><FaReact /></Skills>
+          <Skills> <FaCss3 /> </Skills>
+          <Skills><SiJavascript /></Skills>
+          <Skills><SiRedux /></Skills>
+          <Skills><FaHtml5 /></Skills>
+          <Skills><SiTypescript /></Skills>
         </InfoRow>
       </InfoWrapper>
     </InfoContainer>  

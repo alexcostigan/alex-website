@@ -1,6 +1,8 @@
 import React from "react";
 import styled from "styled-components/macro";
 import { Button } from '../button'
+
+
 const ServiceContainer = styled.div`
   display: flex;
   align-items: center;
@@ -23,15 +25,6 @@ const ServiceImg = styled.img`
   }
 `;
 
-const Button1 = styled(Button)`
-  background-color: transparent;
-  border: none;
-  &:hover {
-    background-color: transparent;
-    border: none;
-    color: rgb(212, 212, 212);
-  }
-`;
 const DescriptionContainer = styled.div`
   display: flex;
   flex-direction: column;
@@ -45,10 +38,10 @@ const DescriptionContainer = styled.div`
 
 const Title = styled.h2`
   color: #000;
-  font-size: 28px;
-  font-weight: 700;
+  font-size: 35px;
+  font-weight: 800;
   margin: 5px 0;
-
+  font-family: 'Amatic SC';
   @media screen and (max-width: 480px) {
     margin-top: 1.5em;
   }
@@ -58,6 +51,7 @@ const Details = styled.p`
   color: #7a7a7a;
   font-size: 21px;
   text-align: center;
+  font-family: 'Patrick Hand';
   max-width: 55%;
 
   @media screen and (max-width: 480px) {
@@ -73,8 +67,8 @@ export function OurSerivce(props) {
       <DescriptionContainer>
         <Title>{title}</Title>
         <Details>{description}</Details>
-        <Button small>{link}</Button>
-        <Button small>{demo}</Button>
+        <Button medium>{link}</Button>
+        <Button medium>{demo}</Button>
       </DescriptionContainer>
       
       <ServiceImg src={imgUrl} />

@@ -3,7 +3,7 @@ import styled from "styled-components";
 import { Footer } from "../../components/footer";
 import { Marginer } from "../../components/marginer";
 import { MoreAboutSection } from "./moreAboutSection";
-import { ReviewsSection, homeObjOne } from "./reviewsSection";
+import { AboutMe, homeObjOne } from "./AboutMe";
 import { ServicesSection } from "./servicesSection";
 import { TopSection } from "./topSection";
 
@@ -18,7 +18,8 @@ export function Homepage(props) {
   return (
     <PageContainer>
       <TopSection />
-      <ReviewsSection {...homeObjOne}/>
+      <AboutMe {...homeObjOne} />
+      <Marginer direction="vertical" margin="2em" />
       <ServicesSection />
       <Marginer direction="vertical" margin="2em" />
       <MoreAboutSection />

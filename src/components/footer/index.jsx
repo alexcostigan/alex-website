@@ -1,7 +1,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import React from "react";
 import styled from "styled-components";
-import { Logo } from "../logo";
 import { Marginer } from "../marginer";
 import { faTwitter, faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
 
@@ -115,7 +114,6 @@ export function Footer(props) {
   return (
     <FooterContainer>
       <Marginer direction="vertical" margin="5em" />
-      <Logo small />
       <Marginer direction="vertical" margin="1em" />
       <MotivationalText>Contact me:</MotivationalText>
       <MotivationalText2>alexcostigan118@hotmail.com</MotivationalText2>
@@ -129,13 +127,21 @@ export function Footer(props) {
         </PrivacyContainer>
         <SocialContainer>
           <SocialIcon>
-            <FontAwesomeIcon icon={faTwitter} />
+            <a href="https://twitter.com/codingWithAlex" target= "_blank" >
+              <FontAwesomeIcon icon={faTwitter} />
+            </a>
           </SocialIcon>
           <SocialIcon>
-            <FontAwesomeIcon icon={faLinkedin} />
+          <a href= "https://www.linkedin.com/in/alex-costigan/" target= "_blank" >
+            <FontAwesomeIcon 
+            icon={faLinkedin}
+            
+            /> </a>
           </SocialIcon>
           <SocialIcon>
+          <a href="https://github.com/alexcostigan" target="_blank">
             <FontAwesomeIcon icon={faGithub} />
+          </a>
           </SocialIcon>
         </SocialContainer>
       </AccessibilityContainer>
